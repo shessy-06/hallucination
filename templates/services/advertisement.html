@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section style="
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),
+rgba(0,0,0,0.6)),
+url('/static/images/advertisement.jpg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+padding:100px;">
+
+    <h1 style="
+    font-size:55px;
+    color:white;
+    margin-bottom:30px;
+    font-family:Georgia, serif;">
+
+        Commercials
+
+    </h1>
+
+    <p style="
+    font-size:24px;
+    color:white;
+    line-height:1.9;
+    font-size: 18px;
+    max-width:900px;">
+
+        commercials that blend storytelling, creativity, and cinematic quality to bring brands to life.
+    </p>
+
+</section>
+
+{% endblock %}

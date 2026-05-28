@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:black;
+padding:40px;">
+
+    <form method="POST"
+    style="
+    width:360px;
+    background:linear-gradient(145deg,#111,#1b1b1b);
+    padding:45px 35px;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);">
+
+        {% csrf_token %}
+
+        <h2 style="
+        margin-bottom:35px;
+        text-align:center;
+        color:white;
+        font-size:32px;
+        letter-spacing:2px;
+        font-family:Georgia, serif;
+        font-weight:500;">
+
+            Register
+
+        </h2>
+
+        <input type="text"
+        name="username"
+        placeholder="Username"
+
+        style="
+        width:100%;
+        padding:15px 18px;
+        margin-bottom:18px;
+        background:#0d0d0d;
+        border:1px solid #222;
+        border-radius:14px;
+        color:white;
+        font-size:15px;
+        outline:none;">
+
+
+
+
+        <input type="email"
+        name="email"
+        placeholder="Email"
+
+        style="
+        width:100%;
+        padding:15px 18px;
+        margin-bottom:18px;
+        background:#0d0d0d;
+        border:1px solid #222;
+        border-radius:14px;
+        color:white;
+        font-size:15px;
+        outline:none;">
+
+
+
+
+        <input type="password"
+        name="password"
+        placeholder="Password"
+
+        style="
+        width:100%;
+        padding:15px 18px;
+        margin-bottom:28px;
+        background:#0d0d0d;
+        border:1px solid #222;
+        border-radius:14px;
+        color:white;
+        font-size:15px;
+        outline:none;">
+
+
+
+
+        <button style="
+        width:100%;
+        padding:14px;
+        background:white;
+        border:none;
+        border-radius:50px;
+        color:black;
+        font-size:15px;
+        font-weight:600;
+        cursor:pointer;">
+
+            Create Account
+
+        </button>
+
+
+
+        <p style="
+        margin-top:25px;
+        text-align:center;
+        color:#bdbdbd;
+        font-size:14px;">
+
+            Already have an account?
+
+            <a href="{% url 'login' %}"
+            style="
+            color:white;
+            text-decoration:none;
+            font-weight:600;">
+
+                Login
+
+            </a>
+
+        </p>
+
+    </form>
+
+</div>
+
+{% endblock %}

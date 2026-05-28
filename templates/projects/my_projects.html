@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div style="padding:80px;">
+
+    <h1 style="margin-bottom:40px;color:black;">
+        
+    </h1>
+
+    {% for project in projects %}
+
+    <div style="
+    background:black;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;">
+
+        <h2 style="color:#ff0000;">
+            {{ project.title }}
+        </h2>
+
+        <p style="margin-top:15px;color:white;">
+            {{ project.description }}
+        </p>
+
+        <p style="margin-top:15px;color:white;">
+            Budget: ₹{{ project.budget }}
+        </p>
+
+        <p style="margin-top:15px;color:white;">
+            Deadline: {{ project.deadline }}
+        </p>
+
+        <p style="margin-top:15px;color:#ff0000;font-weight:bold;">
+            Status: {{ project.status }}
+        </p>
+        {% if project.project_file %}
+
+    <div style="margin-top:20px;">
+
+        <a href="{{ project.project_file.url }}"
+        target="_blank"
+
+        style="
+        background:#ff0000;
+        color:black;
+        padding:10px 20px;
+        text-decoration:none;
+        font-weight:bold;
+        border-radius:8px;">
+
+            View Uploaded File
+
+        </a>
+
+    </div>
+
+{% endif %}
+
+    </div>
+
+    {% empty %}
+
+    <h2>
+        No Projects Submitted
+    </h2>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

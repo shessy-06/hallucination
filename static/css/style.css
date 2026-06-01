@@ -682,24 +682,36 @@ MOBILE RESPONSIVE FIX
 
 
 
-    /* MASONRY GALLERY */
+/* MASONRY GALLERY */
 
-    .gallery-section{
-        padding:40px 20px !important;
-    }
+.masonry-gallery{
+    columns:3;
+    column-gap:20px;
+}
+
+.masonry-gallery img{
+    width:100%;
+    margin-bottom:20px;
+    border-radius:24px;
+    break-inside:avoid;
+    display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
 
     .masonry-gallery{
-        columns:2 140px !important;
-        column-gap:12px !important;
+        columns:2;
+        column-gap:12px;
     }
 
     .masonry-gallery img{
-        margin-bottom:12px !important;
-        border-radius:18px !important;
-        break-inside:avoid !important;
+        margin-bottom:12px;
+        border-radius:18px;
     }
 
-
+}
 
     /* FULLSCREEN IMAGE */
 

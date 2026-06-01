@@ -9,8 +9,6 @@ html{
 }
 
 body{
-    margin:0;
-    padding:0;
     overflow-x:hidden;
 
     background:#FFECD1;
@@ -22,12 +20,12 @@ body{
 
 
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 
 nav{
     width:90%;
 
-    padding:25px 40px;
+    padding:22px 40px;
 
     display:flex;
     justify-content:space-between;
@@ -42,10 +40,6 @@ nav{
 
     z-index:1000;
 
-    flex-wrap:wrap;
-
-    gap:15px;
-
     background:transparent;
 }
 
@@ -55,13 +49,9 @@ nav{
 
     gap:12px;
 
-    font-size:15px;
-
-    font-weight:400;
-
     color:white;
 
-    font-family:"Baskerville","Garamond",serif;
+    font-size:15px;
 }
 
 .logo img{
@@ -75,18 +65,20 @@ nav{
     border:2px solid #3E000C;
 }
 
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
 .nav-links a{
     text-decoration:none;
 
     color:white;
 
-    margin-left:35px;
-
     font-size:18px;
 
     transition:0.3s;
-
-    font-family:"Baskerville","Garamond",serif;
 }
 
 .nav-links a:hover{
@@ -95,19 +87,18 @@ nav{
 
 
 
-
-
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(62,0,12,0.45), rgba(62,0,12,0.55)),
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
     url("/static/images/hero.jpg");
 
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
     justify-content:center;
@@ -119,36 +110,41 @@ nav{
     padding:20px;
 }
 
+.hero-content{
+    width:90%;
+    max-width:900px;
+}
+
 .hero h1{
-    font-size:clamp(45px, 8vw, 90px);
+    font-size:clamp(45px, 8vw, 95px);
 
     font-weight:900;
 
     letter-spacing:-2px;
 
-    text-transform:capitalize;
-
     color:#FFECD1;
 
     margin-bottom:20px;
 
-    font-family:"Baskerville","Garamond",serif;
+    line-height:1;
 }
 
 .hero p{
-    font-size:clamp(15px, 3vw, 24px);
-
-    max-width:850px;
+    font-size:clamp(15px, 2.5vw, 24px);
 
     line-height:1.8;
 
     color:#fff1df;
+
+    max-width:800px;
+
+    margin:auto;
 }
 
 .hero button{
-    margin-top:45px;
+    margin-top:40px;
 
-    padding:18px 55px;
+    padding:16px 45px;
 
     background:#FFECD1;
 
@@ -158,7 +154,7 @@ nav{
 
     border-radius:50px;
 
-    font-size:19px;
+    font-size:18px;
 
     font-weight:bold;
 
@@ -168,7 +164,7 @@ nav{
 
     font-family:"Baskerville","Garamond",serif;
 
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
 .hero button:hover{
@@ -181,16 +177,16 @@ nav{
 
 
 
-
-
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about{
     width:90%;
+
     margin:100px auto;
+
     padding:90px 60px;
 
-    background:#FFECD1 !important;
+    background:#FFECD1;
 
     border-radius:30px;
 
@@ -198,20 +194,22 @@ nav{
 }
 
 .about-content{
-    text-align:center;
     max-width:850px;
+
     margin:auto;
+
+    text-align:center;
 }
 
 .about h2{
     font-size:52px;
-    margin-bottom:25px;
 
-    color:#3E000C !important;
+    margin-bottom:25px;
 }
 
 .about p{
     font-size:20px;
+
     line-height:1.9;
 
     color:#5b1a24;
@@ -219,8 +217,7 @@ nav{
 
 
 
-
-/* SERVICES */
+/* ================= SERVICES ================= */
 
 .services{
     width:90%;
@@ -242,8 +239,6 @@ nav{
     font-size:52px;
 
     margin-bottom:70px;
-
-    color:#3E000C;
 }
 
 .service-container{
@@ -251,15 +246,15 @@ nav{
 
     justify-content:center;
 
-    gap:35px;
-
     flex-wrap:wrap;
+
+    gap:35px;
 }
 
 .service-box{
-    background:#3E000C;
-
     width:320px;
+
+    background:#3E000C;
 
     padding:45px 35px;
 
@@ -267,23 +262,21 @@ nav{
 
     transition:0.4s;
 
-    border:1px solid rgba(255,236,209,0.15);
-
     box-shadow:0 10px 30px rgba(62,0,12,0.15);
 }
 
 .service-box:hover{
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
     background:#5b0014;
 }
 
 .service-box h3{
+    color:#FFECD1;
+
     font-size:30px;
 
     margin-bottom:20px;
-
-    color:#FFECD1;
 }
 
 .service-box p{
@@ -294,9 +287,7 @@ nav{
 
 
 
-
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
     margin-top:80px;
@@ -316,46 +307,29 @@ footer p{
 
 
 
-
+/* ================= GLOBAL ================= */
 
 img{
     display:block;
+    max-width:100%;
 }
 
-@media(max-width:768px){
 
-    nav{
-        padding:20px;
-    }
 
-    .hero{
-        padding:40px 20px;
-        text-align:center;
-    }
-
-    .hero h1{
-        font-size:50px;
-        line-height:1.1;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-}
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
     nav{
         width:100%;
+
         padding:18px 15px;
 
         flex-direction:column;
 
-        gap:10px;
+        gap:12px;
 
         top:0;
-
         left:0;
 
         transform:none;
@@ -371,29 +345,29 @@ img{
     }
 
     .nav-links{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
         gap:15px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
     }
 
     .nav-links a{
-        margin-left:0;
         font-size:15px;
     }
 
     .hero{
-        min-height:100vh;
+        padding:130px 20px 60px;
 
-        padding:120px 20px 60px 20px;
+        background-size:cover;
+
+        background-position:60%;
     }
 
     .hero h1{
         font-size:48px;
 
         line-height:1.1;
-
-        margin-bottom:18px;
     }
 
     .hero p{
@@ -408,8 +382,6 @@ img{
         padding:14px 30px;
 
         font-size:16px;
-
-        margin-top:30px;
     }
 
     .about,
@@ -430,6 +402,186 @@ img{
 
     .service-box{
         width:100%;
+    }
+
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    /* HERO */
+
+    .portfolio-hero{
+        padding:120px 20px 60px;
+        height:auto !important;
+        min-height:100vh;
+    }
+
+    .portfolio-hero h1{
+        font-size:55px !important;
+        letter-spacing:2px !important;
+        line-height:1.1;
+    }
+
+    .portfolio-hero p{
+        font-size:18px !important;
+        line-height:1.8 !important;
+    }
+
+
+
+    /* FEATURE SECTION */
+
+    .feature-section{
+        padding:20px !important;
+    }
+
+    .feature-box{
+        height:70vh !important;
+        border-radius:20px !important;
+        background-position:center !important;
+    }
+
+    .feature-content{
+        padding:30px !important;
+    }
+
+    .feature-content h1{
+        font-size:42px !important;
+    }
+
+    .feature-content p{
+        font-size:17px !important;
+    }
+
+
+
+    /* MASONRY */
+
+    .gallery-section{
+        padding:60px 20px !important;
+    }
+
+    .masonry-gallery{
+        columns:1 250px !important;
+    }
+
+    .masonry-gallery img{
+        border-radius:18px !important;
+    }
+
+
+
+    /* FULLSCREEN IMAGE */
+
+    .fullscreen-image{
+        height:80vh !important;
+        padding:20px !important;
+        background-position:center !important;
+    }
+
+    .fullscreen-content h1{
+        font-size:48px !important;
+        line-height:1.2;
+    }
+
+    .fullscreen-content p{
+        font-size:18px !important;
+    }
+
+
+
+    /* GRID */
+
+    .cinematic-grid{
+        padding:70px 20px !important;
+    }
+
+    .grid-container{
+        grid-template-columns:1fr !important;
+    }
+
+    .big-grid{
+        height:400px !important;
+    }
+
+    .small1,
+    .small2{
+        height:250px !important;
+    }
+
+
+
+    /* QUOTE */
+
+    .quote-section{
+        height:60vh !important;
+        padding:20px !important;
+    }
+
+    .quote-section h1{
+        font-size:40px !important;
+        line-height:1.5;
+    }
+
+
+
+    /* VIDEO SECTION */
+
+    .video-section{
+        padding:70px 20px !important;
+    }
+
+    .video-section h1{
+        font-size:45px !important;
+        margin-bottom:50px !important;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    .video-box video{
+        height:400px !important;
+    }
+
+    .video-overlay{
+        padding:25px !important;
+    }
+
+    .video-overlay p{
+        font-size:16px !important;
+    }
+
+
+
+    /* SHOWREEL */
+
+    .showreel-section{
+        height:90vh !important;
+    }
+
+    .showreel-content{
+        padding:20px !important;
+    }
+
+    .showreel-content h1{
+        font-size:50px !important;
+        line-height:1.1;
+    }
+
+    .showreel-content p{
+        font-size:18px !important;
+        line-height:1.8;
+    }
+
+
+
+    /* FOOTER */
+
+    .portfolio-footer{
+        padding:30px 20px !important;
     }
 
 }

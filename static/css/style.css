@@ -799,3 +799,1145 @@ MOBILE RESPONSIVE FIX
     }
 
 }
+
+/* ==========================================================================
+   REFRACTORED RESPONSIVE STYLES
+   ========================================================================== */
+
+/* --- Common Utilities --- */
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.min-h-100vh { min-height: 100vh; }
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: #3E000C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background: #5b0014;
+}
+
+/* --- Home Page --- */
+.home-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.home-hero-title {
+    font-size: 75px;
+    color: #FFECD1;
+    font-family: Georgia, serif;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+.home-hero-p {
+    font-size: 20px;
+    color: white;
+    max-width: 900px;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+.home-hero-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 16px 40px;
+    background: #FFECD1;
+    color: #3E000C;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.home-hero-btn:hover {
+    background: #3E000C;
+    color: #FFECD1;
+    box-shadow: 0 5px 15px rgba(255, 236, 209, 0.4);
+}
+
+/* About video section */
+.about-video-section {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+.about-video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.about-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    z-index: -1;
+}
+.about-video-content {
+    max-width: 1000px;
+    padding: 40px;
+}
+.about-video-title {
+    font-size: 55px;
+    color: #FFECD1;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+    letter-spacing: 2px;
+}
+.about-video-text {
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+}
+
+/* Services section */
+.services-section-home {
+    padding: 90px 40px;
+    background: #FFECD1;
+}
+.services-title-home {
+    text-align: center;
+    font-size: 33px;
+    color: #3E000C;
+    margin-bottom: 55px;
+    letter-spacing: 4px;
+    font-family: Georgia, serif;
+}
+.services-grid-home {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+.service-card-home {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.service-card-home:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(62, 0, 12, 0.3);
+}
+.service-card-content {
+    padding: 30px;
+    text-align: left;
+}
+.service-card-title {
+    color: #FFECD1;
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-family: Georgia, serif;
+}
+.service-card-desc {
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+.service-card-btn {
+    display: inline-block;
+    background: #FFECD1;
+    color: #3E000C;
+    padding: 7px 18px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+.service-card-btn:hover {
+    background: #3E000C;
+    color: #FFECD1;
+}
+
+/* --- Portfolio Page --- */
+.portfolio-hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.portfolio-hero-title {
+    font-size: 120px;
+    color: #FFECD1;
+    letter-spacing: 6px;
+    font-family: Georgia, serif;
+    margin-bottom: 30px;
+}
+.portfolio-hero-desc {
+    font-size: 26px;
+    color: white;
+    line-height: 1.9;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.portfolio-feature-section {
+    padding: 40px;
+    background: #FFECD1;
+}
+.portfolio-feature-box {
+    height: 90vh;
+    border-radius: 35px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.portfolio-feature-content {
+    padding: 60px;
+    text-align: left;
+}
+.portfolio-feature-title {
+    color: #FFECD1;
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+.portfolio-feature-desc {
+    color: white;
+    font-size: 24px;
+    line-height: 1.8;
+    max-width: 700px;
+}
+.portfolio-gallery-section-new {
+    padding: 100px 50px;
+    background: #FFECD1;
+}
+.portfolio-fullscreen-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.portfolio-fullscreen-title {
+    color: #FFECD1;
+    font-size: 90px;
+    margin-bottom: 25px;
+    font-family: Georgia, serif;
+}
+.portfolio-fullscreen-desc {
+    color: white;
+    font-size: 25px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.portfolio-cinematic-grid-section {
+    padding: 120px 50px;
+    background: #FFECD1;
+}
+.portfolio-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+.portfolio-big-grid {
+    height: 700px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-small-grids-wrap {
+    display: grid;
+    gap: 28px;
+}
+.portfolio-small-grid-1,
+.portfolio-small-grid-2 {
+    height: 336px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-quote-section {
+    height: 80vh;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.portfolio-quote-title {
+    color: #FFECD1;
+    font-size: 75px;
+    max-width: 1000px;
+    line-height: 1.5;
+    font-family: Georgia, serif;
+}
+.portfolio-video-section-new {
+    padding: 120px 50px;
+    margin-top: 100px;
+    background: #3E000C;
+}
+.portfolio-video-title-new {
+    text-align: center;
+    font-size: 70px;
+    color: #FFECD1;
+    margin-bottom: 100px;
+    font-family: Georgia, serif;
+    letter-spacing: 3px;
+}
+.portfolio-video-grid-new {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+.portfolio-video-box-new {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.portfolio-video-element-new {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+.portfolio-video-overlay-new {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+.portfolio-video-desc-new {
+    color: white;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.portfolio-showreel-section-new {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.portfolio-showreel-video-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-showreel-overlay-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+.portfolio-showreel-content-new {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.portfolio-showreel-title-new {
+    color: #FFECD1;
+    font-size: 95px;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+}
+.portfolio-showreel-desc-new {
+    color: white;
+    font-size: 28px;
+    max-width: 900px;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+.portfolio-footer-new {
+    background: #3E000C;
+    padding: 45px;
+    text-align: center;
+}
+.portfolio-footer-text-new {
+    color: #FFECD1;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+/* --- Contact Page --- */
+.contact-section-new {
+    padding: 120px 100px;
+    background: #FFECD1;
+    min-height: 100vh;
+}
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.contact-left-col {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+.contact-right-col {
+    flex: 1;
+    min-width: 320px;
+    background: #3E000C;
+    padding: 55px;
+    border-radius: 28px;
+    box-shadow: 0 10px 40px rgba(62,0,12,0.25);
+}
+.contact-title-new {
+    font-size: 55px;
+    color: #3E000C;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+}
+.contact-desc-new {
+    font-size: 21px;
+    color: #3E000C;
+    line-height: 1.9;
+    margin-bottom: 45px;
+}
+.contact-info-block {
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(62,0,12,0.1);
+    text-align: left;
+}
+.contact-info-title {
+    color: #3E000C;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contact-info-detail {
+    font-size: 18px;
+    color: #5b1a24;
+}
+.contact-input-new {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 14px;
+    background: #FFECD1;
+    color: #3E000C;
+    font-size: 16px;
+    outline: none;
+}
+.contact-textarea-new {
+    width: 100%;
+    height: 180px;
+    padding: 18px;
+    border: none;
+    border-radius: 14px;
+    background: #FFECD1;
+    color: #3E000C;
+    font-size: 16px;
+    margin-bottom: 22px;
+    outline: none;
+    resize: vertical;
+}
+.contact-btn-new {
+    width: 100%;
+    padding: 18px;
+    background: #FFECD1;
+    color: #3E000C;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.contact-btn-new:hover {
+    background: #3E000C;
+    color: #FFECD1;
+    box-shadow: 0 5px 15px rgba(62, 0, 12, 0.4);
+}
+
+/* --- Service Detail Page --- */
+.service-detail-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    text-align: left;
+}
+.service-detail-title {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 40px;
+    font-family: Georgia, serif;
+}
+.service-detail-desc {
+    font-size: 18px;
+    color: white;
+    line-height: 1.9;
+    max-width: 1100px;
+}
+
+/* --- Account Pages --- */
+.auth-wrapper {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 40px;
+}
+.auth-form {
+    width: 360px;
+    background: linear-gradient(145deg, #111, #1b1b1b);
+    padding: 45px 35px;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.auth-title {
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+    font-weight: 500;
+}
+.auth-input {
+    width: 100%;
+    padding: 15px 18px;
+    margin-bottom: 18px;
+    background: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 14px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.auth-btn:hover {
+    background: #ddd;
+}
+.auth-footer-text {
+    margin-top: 25px;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+.auth-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Project Pages --- */
+.project-form-wrapper {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    background: #FFECD1;
+    min-height: 90vh;
+}
+.project-form {
+    width: 500px;
+    background: black;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+.project-form-title {
+    margin-bottom: 30px;
+    color: #ff0000;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+.project-form-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+    background: #0d0d0d;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+}
+.project-form-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #222;
+    background: #0d0d0d;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    resize: vertical;
+}
+.project-form-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff0000;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.project-form-btn:hover {
+    background: #cc0000;
+}
+.my-projects-wrapper {
+    padding: 80px 40px;
+    background: #FFECD1;
+    min-height: 90vh;
+}
+.my-projects-title {
+    margin-bottom: 40px;
+    color: #3E000C;
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+.project-card {
+    background: black;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.project-card-title {
+    color: #ff0000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project-card-desc {
+    margin-top: 15px;
+    color: white;
+    line-height: 1.6;
+}
+.project-card-info {
+    margin-top: 10px;
+    color: #ddd;
+}
+.project-card-status {
+    margin-top: 15px;
+    color: #ff0000;
+    font-weight: bold;
+}
+.project-card-file-btn {
+    display: inline-block;
+    background: #ff0000;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+.project-card-file-btn:hover {
+    background: #cc0000;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (max-width: 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    /* Home Page */
+    .home-hero-title {
+        font-size: 60px;
+    }
+    .about-video-title {
+        font-size: 45px;
+    }
+    .services-grid-home {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Portfolio */
+    .portfolio-hero-title {
+        font-size: 90px;
+    }
+    .portfolio-feature-title {
+        font-size: 60px;
+    }
+    .portfolio-fullscreen-title {
+        font-size: 70px;
+    }
+    .portfolio-quote-title {
+        font-size: 55px;
+    }
+    .portfolio-video-title-new {
+        font-size: 55px;
+        margin-bottom: 60px;
+    }
+    .portfolio-showreel-title-new {
+        font-size: 70px;
+    }
+    
+    /* Contact */
+    .contact-section-new {
+        padding: 100px 50px;
+    }
+    .contact-container {
+        gap: 40px;
+    }
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (max-width: 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Base Navbar backdrop */
+    nav {
+        width: 100%;
+        padding: 15px 20px;
+        background: rgba(0, 0, 0, 0.85) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        top: 0;
+        left: 0;
+        transform: none;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    /* Home Page */
+    .home-hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 60px;
+    }
+    .home-hero-title {
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+    .home-hero-p {
+        font-size: 18px;
+    }
+    .about-video-section {
+        height: auto;
+        min-height: 70vh;
+        margin-top: 60px;
+    }
+    .about-video-content {
+        padding: 60px 20px;
+    }
+    .about-video-title {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .about-video-text {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .services-section-home {
+        padding: 60px 20px;
+    }
+    .services-title-home {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .services-grid-home {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .service-card-home {
+        height: 320px;
+    }
+    
+    /* Portfolio */
+    .portfolio-hero-section {
+        padding: 120px 20px 60px;
+    }
+    .portfolio-hero-title {
+        font-size: 55px;
+        letter-spacing: 2px;
+    }
+    .portfolio-hero-desc {
+        font-size: 18px;
+    }
+    .portfolio-feature-section {
+        padding: 20px;
+    }
+    .portfolio-feature-box {
+        height: 60vh;
+        border-radius: 20px;
+    }
+    .portfolio-feature-content {
+        padding: 30px;
+    }
+    .portfolio-feature-title {
+        font-size: 42px;
+    }
+    .portfolio-feature-desc {
+        font-size: 18px;
+    }
+    .portfolio-gallery-section-new {
+        padding: 60px 20px;
+    }
+    .portfolio-fullscreen-section {
+        height: 70vh;
+        padding: 20px;
+    }
+    .portfolio-fullscreen-title {
+        font-size: 45px;
+    }
+    .portfolio-fullscreen-desc {
+        font-size: 18px;
+    }
+    .portfolio-cinematic-grid-section {
+        padding: 60px 20px;
+    }
+    .portfolio-grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .portfolio-big-grid {
+        height: 400px;
+    }
+    .portfolio-small-grid-1,
+    .portfolio-small-grid-2 {
+        height: 250px;
+    }
+    .portfolio-quote-section {
+        height: 50vh;
+    }
+    .portfolio-quote-title {
+        font-size: 40px;
+    }
+    .portfolio-video-section-new {
+        padding: 60px 20px;
+        margin-top: 60px;
+    }
+    .portfolio-video-title-new {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .portfolio-video-grid-new {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .portfolio-video-element-new {
+        height: 400px;
+    }
+    .portfolio-video-overlay-new {
+        padding: 20px;
+    }
+    .portfolio-video-desc-new {
+        font-size: 16px;
+    }
+    .portfolio-showreel-section-new {
+        height: 80vh;
+    }
+    .portfolio-showreel-title-new {
+        font-size: 45px;
+    }
+    .portfolio-showreel-desc-new {
+        font-size: 18px;
+    }
+    .portfolio-footer-new {
+        padding: 30px 20px;
+    }
+    
+    /* Contact */
+    .contact-section-new {
+        padding: 100px 20px 40px;
+    }
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contact-title-new {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .contact-desc-new {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .contact-right-col {
+        padding: 35px 25px;
+        min-width: 100%;
+    }
+    
+    /* Service Detail Page */
+    .service-detail-section {
+        padding: 120px 30px 60px;
+    }
+    .service-detail-title {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .service-detail-desc {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    /* Accounts & Forms */
+    .auth-wrapper {
+        padding: 100px 15px 40px;
+    }
+    .auth-form {
+        padding: 35px 20px;
+        width: 100%;
+        max-width: 360px;
+    }
+    
+    /* Projects */
+    .project-form-wrapper {
+        padding: 120px 15px 40px;
+    }
+    .project-form {
+        padding: 30px 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+    .my-projects-wrapper {
+        padding: 120px 20px 40px;
+    }
+    .my-projects-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (max-width: 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+    /* Navbar scale down slightly to fit on small mobile */
+    nav {
+        padding: 12px 15px;
+    }
+    .logo span {
+        font-size: 14px;
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    .nav-links {
+        gap: 12px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Home Page */
+    .home-hero-title {
+        font-size: 36px;
+    }
+    .home-hero-p {
+        font-size: 16px;
+    }
+    .home-hero-btn {
+        padding: 12px 30px;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    .about-video-title {
+        font-size: 30px;
+    }
+    .about-video-text {
+        font-size: 15px;
+    }
+    .services-title-home {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .service-card-content {
+        padding: 20px;
+    }
+    .service-card-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .service-card-desc {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    .service-card-btn {
+        padding: 5px 14px;
+        font-size: 12px;
+    }
+    
+    /* Portfolio */
+    .portfolio-hero-title {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .portfolio-hero-desc {
+        font-size: 16px;
+    }
+    .portfolio-feature-box {
+        height: 50vh;
+    }
+    .portfolio-feature-content {
+        padding: 20px;
+    }
+    .portfolio-feature-title {
+        font-size: 32px;
+    }
+    .portfolio-feature-desc {
+        font-size: 16px;
+    }
+    .portfolio-fullscreen-section {
+        height: 60vh;
+    }
+    .portfolio-fullscreen-title {
+        font-size: 34px;
+    }
+    .portfolio-fullscreen-desc {
+        font-size: 16px;
+    }
+    .portfolio-big-grid {
+        height: 300px;
+        border-radius: 20px;
+    }
+    .portfolio-small-grid-1,
+    .portfolio-small-grid-2 {
+        height: 180px;
+        border-radius: 20px;
+    }
+    .portfolio-quote-title {
+        font-size: 28px;
+    }
+    .portfolio-video-title-new {
+        font-size: 30px;
+    }
+    .portfolio-video-element-new {
+        height: 300px;
+    }
+    .portfolio-showreel-title-new {
+        font-size: 34px;
+    }
+    .portfolio-showreel-desc-new {
+        font-size: 16px;
+    }
+    
+    /* Contact */
+    .contact-title-new {
+        font-size: 30px;
+    }
+    .contact-desc-new {
+        font-size: 16px;
+    }
+    .contact-info-title {
+        font-size: 18px;
+    }
+    .contact-info-detail {
+        font-size: 16px;
+    }
+    .contact-input-new,
+    .contact-textarea-new {
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .contact-btn-new {
+        padding: 15px;
+        font-size: 15px;
+    }
+    
+    /* Service Detail Page */
+    .service-detail-section {
+        padding: 100px 15px 40px;
+    }
+    .service-detail-title {
+        font-size: 30px;
+    }
+    .service-detail-desc {
+        font-size: 15px;
+    }
+
+    /* Floating WhatsApp Button size adjustments for smaller mobile */
+    .whatsapp-btn {
+        width: 45px !important;
+        height: 45px !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        font-size: 28px !important;
+    }
+}

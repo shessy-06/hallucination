@@ -2,70 +2,21 @@
 
 {% block content %}
 
-<div style="padding:100px;display:flex;justify-content:center;">
+<div class="project-form-wrapper">
 
-<form method="POST" enctype="multipart/form-data"
-style="width:500px;background:black;padding:40px;border-radius:15px;">
+    <form method="POST" enctype="multipart/form-data" class="project-form">
+        {% csrf_token %}
 
-    {% csrf_token %}
+        <h2 class="project-form-title">Submit Project</h2>
 
-    <h2 style="margin-bottom:30px;color:#ff0000;text-align:center;">
-        Submit Project
-    </h2>
+        <input type="text" name="title" placeholder="Project Title" class="project-form-input" required>
+        <textarea name="description" placeholder="Project Description" class="project-form-textarea" required></textarea>
+        <input type="number" name="budget" placeholder="Budget" class="project-form-input" required>
+        <input type="date" name="deadline" class="project-form-input" required>
+        <input type="file" name="project_file" class="project-form-input" style="background: white; color: black;" required>
 
-    <input type="text"
-    name="title"
-    placeholder="Project Title"
-
-    style="width:100%;
-    padding:15px;
-    margin-bottom:20px;">
-
-    <textarea
-    name="description"
-    placeholder="Project Description"
-
-    style="width:100%;
-    height:150px;
-    padding:15px;
-    margin-bottom:20px;"></textarea>
-
-    <input type="number"
-    name="budget"
-    placeholder="Budget"
-
-    style="width:100%;
-    padding:15px;
-    margin-bottom:20px;">
-
-    <input type="date"
-    name="deadline"
-
-    style="width:100%;
-    padding:15px;
-    margin-bottom:20px;">
-
-    <input type="file"
-    name="project_file"
-
-    style="width:100%;
-    padding:15px;
-    margin-bottom:20px;
-    background:white;">
-
-    <button
-    style="width:100%;
-    padding:15px;
-    background:#ff0000;
-    color:black;
-    border:none;
-    font-weight:bold;">
-
-        Submit Project
-
-    </button>
-
-</form>
+        <button class="project-form-btn">Submit Project</button>
+    </form>
 
 </div>
 

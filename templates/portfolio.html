@@ -2,617 +2,118 @@
 
 {% block content %}
 
-
-
 <!-- HERO -->
-
-<section class="portfolio-hero" style="
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
-url('/static/images/heroe.jpeg');
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;">
-
+<section class="portfolio-hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/static/images/heroe.jpeg');">
     <div class="hero-content">
-
-        <h1 style="
-        font-size:120px;
-        color:#FFECD1;
-        letter-spacing:6px;
-        font-family:Georgia, serif;
-        margin-bottom:30px;">
-
-            PORTFOLIO
-
-        </h1>
-
-        <p style="
-        font-size:26px;
-        color:white;
-        line-height:1.9;
-        max-width:900px;">
-
-            Cinematic visuals crafted through emotion,
-            storytelling, luxury aesthetics, and timeless creativity.
-
+        <h1 class="portfolio-hero-title">PORTFOLIO</h1>
+        <p class="portfolio-hero-desc">
+            Cinematic visuals crafted through emotion, storytelling, luxury aesthetics, and timeless creativity.
         </p>
-
     </div>
-
 </section>
-
-
-
-
 
 <!-- BIG FEATURE IMAGE -->
-
-<section class="feature-section" style="
-padding:40px;
-background:#FFECD1;">
-
-    <div class="feature-box" style="
-height:90vh;
-
-    border-radius:35px;
-
-    background:
-    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)),
-    url('/static/images/p1.jpeg');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:end;">
-
-        <div class="feature-content" style="padding:60px;">
-
-            <h1 style="
-            color:#FFECD1;
-            font-size:80px;
-            margin-bottom:20px;
-            font-family:Georgia, serif;">
-
-                Cinematic Stories
-
-            </h1>
-
-            <p style="
-            color:white;
-            font-size:24px;
-            line-height:1.8;
-            max-width:700px;">
-
-                Luxury visual storytelling with emotion,
-                cinematic direction, and artistic framing.
-
+<section class="portfolio-feature-section">
+    <div class="portfolio-feature-box" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.5)), url('/static/images/p1.jpeg');">
+        <div class="portfolio-feature-content">
+            <h1 class="portfolio-feature-title">Cinematic Stories</h1>
+            <p class="portfolio-feature-desc">
+                Luxury visual storytelling with emotion, cinematic direction, and artistic framing.
             </p>
-
         </div>
-
     </div>
-
 </section>
-
-
-
-
 
 <!-- MASONRY STYLE GRID -->
-
-<section class="gallery-section" style="
-padding:100px 50px;
-background:#FFECD1;">
-
+<section class="portfolio-gallery-section-new">
     <div class="masonry-gallery">
-
-
-
-
-        <img src="/static/images/p2.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-
-
-
-        <img src="/static/images/p3.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-
-
-
-        <img src="/static/images/p44.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-        <img src="/static/images/plast.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;
-        break-inside:avoid;
-        display:block;">
-
-
-
-
-
-        <img src="/static/images/p5.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-
-
-
-        <img src="/static/images/p66.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-
-
-
-        <img src="/static/images/p7.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-
-
-
-        <img src="/static/images/p8.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
-
-
-
-
-        <img src="/static/images/p9.jpeg"
-
-        style="
-        width:100%;
-        margin-bottom:20px;
-        border-radius:24px;">
-
+        <img src="/static/images/p2.jpeg">
+        <img src="/static/images/p3.jpeg">
+        <img src="/static/images/p44.jpeg">
+        <img src="/static/images/plast.jpeg" style="break-inside:avoid; display:block;">
+        <img src="/static/images/p5.jpeg">
+        <img src="/static/images/p66.jpeg">
+        <img src="/static/images/p7.jpeg">
+        <img src="/static/images/p8.jpeg">
+        <img src="/static/images/p9.jpeg">
     </div>
-
 </section>
-
-
-
-
 
 <!-- FULLSCREEN IMAGE -->
-
-<section class="fullscreen-image" style="
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.55)),
-url('/static/images/p10.jpeg');
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;">
-
+<section class="portfolio-fullscreen-section" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.55)), url('/static/images/p10.jpeg');">
     <div class="fullscreen-content">
-
-        <h1 style="
-        color:#FFECD1;
-        font-size:90px;
-        margin-bottom:25px;
-        font-family:Georgia, serif;">
-
-            Visual Emotion
-
-        </h1>
-
-        <p style="
-        color:white;
-        font-size:25px;
-        line-height:1.8;
-        max-width:900px;">
-
-            Every frame is carefully designed to create
-            cinematic depth and emotional connection.
-
+        <h1 class="portfolio-fullscreen-title">Visual Emotion</h1>
+        <p class="portfolio-fullscreen-desc">
+            Every frame is carefully designed to create cinematic depth and emotional connection.
         </p>
-
     </div>
-
 </section>
-
-
-
-
 
 <!-- LARGE CINEMATIC GRID -->
-
-<section class="cinematic-grid" style="
-padding:120px 50px;
-background:#FFECD1;">
-
-    <div class="grid-container" style="
-display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:28px;">
-
-
-
-
-        <div class="big-grid" style="
-height:700px;
-
-        border-radius:30px;
-
-        background:
-        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-        url('/static/images/p12.jpeg');
-
-        background-size:cover;
-        background-position:center;"></div>
-
-
-
-
-
-        <div style="
-        display:grid;
-        gap:28px;">
-
-            <div class="small1" style="
-height:336px;
-
-            border-radius:30px;
-
-            background:
-            linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-            url('/static/images/p11.jpeg');
-
-            background-size:cover;
-            background-position:center;"></div>
-
-
-
-
-
-            <div class="small2" style="
-            height:336px;
-
-            border-radius:30px;
-
-            background:
-            linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
-            url('/static/images/p13.jpeg');
-
-            background-size:cover;
-            background-position:center;"></div>
-
+<section class="portfolio-cinematic-grid-section">
+    <div class="portfolio-grid-container">
+        <div class="portfolio-big-grid" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), url('/static/images/p12.jpeg');"></div>
+        <div class="portfolio-small-grids-wrap">
+            <div class="portfolio-small-grid-1" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), url('/static/images/p11.jpeg');"></div>
+            <div class="portfolio-small-grid-2" style="background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)), url('/static/images/p13.jpeg');"></div>
         </div>
-
     </div>
-
 </section>
-
-
-
-
 
 <!-- QUOTE -->
-
-<section class="quote-section" style="
-height:80vh;
-
-
-background:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('/static/images/p14.jpeg');
-
-background-size:cover;
-background-position:bottom;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;">
-
-    <h1 style="
-    color:#FFECD1;
-    font-size:75px;
-    max-width:1000px;
-    line-height:1.5;
-    font-family:Georgia, serif;">
-
-        “Every Frame Carries A Soul.”
-
-    </h1>
-
+<section class="portfolio-quote-section" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/images/p14.jpeg');">
+    <h1 class="portfolio-quote-title">“Every Frame Carries A Soul.”</h1>
 </section>
 
-
-
-
-
 <!-- CINEMATIC VIDEO SHOWCASE -->
-
-<section class="video-section" style="
-padding:120px 50px;
-margin-top:100px;
-background:#3E000C;">
-
-    <h1 style="
-    text-align:center;
-    font-size:70px;
-    color:#FFECD1;
-    margin-bottom:100px;
-    font-family:Georgia, serif;
-    letter-spacing:3px;">
-
-        Motion Frames
-
-    </h1>
-
-
-
-
-
-    <div class="video-grid" style="
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:28px;">
-
-
-
-
+<section class="portfolio-video-section-new">
+    <h1 class="portfolio-video-title-new">Motion Frames</h1>
+    <div class="portfolio-video-grid-new">
         <!-- VIDEO 1 -->
-
-        <div class="video-box" style="
-        position:relative;
-        overflow:hidden;
-        border-radius:30px;">
-
-            <video autoplay muted loop playsinline
-
-            style="
-            width:100%;
-            height:650px;
-            object-fit:cover;">
-
-                <source src="/static/videos/v1.mp4"
-                type="video/mp4">
-
+        <div class="portfolio-video-box-new">
+            <video autoplay muted loop playsinline class="portfolio-video-element-new">
+                <source src="/static/videos/v1.mp4" type="video/mp4">
             </video>
-
-
-
-
-
-            <div class="video-overlay" style="
-            position:absolute;
-            bottom:0;
-            left:0;
-
-            width:100%;
-
-            padding:35px;
-
-            background:
-            linear-gradient(transparent, rgba(0,0,0,0.85));">
-
-                <p style="
-                color:white;
-                line-height:1.8;
-                font-size:18px;">
-
-                    Emotional cinematic storytelling
-                    through luxury visuals.
-
+            <div class="portfolio-video-overlay-new">
+                <p class="portfolio-video-desc-new">
+                    Emotional cinematic storytelling through luxury visuals.
                 </p>
-
             </div>
-
         </div>
-
-
-
-
 
         <!-- VIDEO 2 -->
-
-        <div class="video-box" style="
-        position:relative;
-        overflow:hidden;
-        border-radius:30px;">
-
-            <video autoplay muted loop playsinline
-
-            style="
-            width:100%;
-            height:650px;
-            object-fit:cover;">
-
-                <source src="/static/videos/v3.mp4"
-                type="video/mp4">
-
+        <div class="portfolio-video-box-new">
+            <video autoplay muted loop playsinline class="portfolio-video-element-new">
+                <source src="/static/videos/v3.mp4" type="video/mp4">
             </video>
-
-
-
-
-
-            <div class="video-overlay" style="
-            position:absolute;
-            bottom:0;
-            left:0;
-
-            width:100%;
-
-            padding:35px;
-
-            background:
-            linear-gradient(transparent, rgba(0,0,0,0.85));">
-
-                <p style="
-                color:white;
-                line-height:1.8;
-                font-size:18px;">
-
-                    Premium cinematic visuals
-                    crafted for modern branding.
-
+            <div class="portfolio-video-overlay-new">
+                <p class="portfolio-video-desc-new">
+                    Premium cinematic visuals crafted for modern branding.
                 </p>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- FULLSCREEN CINEMATIC VIDEO -->
-
-<section class="showreel-section" style="
-position:relative;
-height:100vh;
-overflow:hidden;">
-
-
-
-
-    <video autoplay muted loop playsinline
-
-    style="
-    position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;">
-
-        <source src="/static/videos/showreel.mp4"
-        type="video/mp4">
-
+<section class="portfolio-showreel-section-new">
+    <video autoplay muted loop playsinline class="portfolio-showreel-video-new">
+        <source src="/static/videos/showreel.mp4" type="video/mp4">
     </video>
-
-
-
-
-
-    <div style="
-    position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,0.45);"></div>
-
-
-
-
-
-    <div style="
-    position:relative;
-    z-index:2;
-
-    height:100%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;">
-
+    <div class="portfolio-showreel-overlay-new"></div>
+    <div class="portfolio-showreel-content-new">
         <div>
-
-            <h1 style="
-            color:#FFECD1;
-            font-size:95px;
-            margin-bottom:30px;
-            font-family:Georgia, serif;">
-
-                Cinematic Experience
-
-            </h1>
-
-            <p style="
-            color:white;
-            font-size:28px;
-            max-width:900px;
-            line-height:1.8;">
-
-                Visual storytelling crafted through motion,
-                emotion, atmosphere, and cinematic direction.
-
+            <h1 class="portfolio-showreel-title-new">Cinematic Experience</h1>
+            <p class="portfolio-showreel-desc-new">
+                Visual storytelling crafted through motion, emotion, atmosphere, and cinematic direction.
             </p>
-
         </div>
-
     </div>
-
 </section>
 
-<!-- FOOTER --> 
-<footer class="portfolio-footer"
-    style=" background:#3E000C;
-    padding:45px;
-    text-align:center;"> 
-    <p style=" color:#FFECD1;
-    letter-spacing:1px;
-    font-size:15px;">
-    © 2026 Hallucination Production Firm 
-    </p>
-</footer> 
-    
-    
-    
-    {% endblock %}
+<!-- FOOTER -->
+<footer class="portfolio-footer-new">
+    <p class="portfolio-footer-text-new">© 2026 Hallucination Production Firm</p>
+</footer>
+
+{% endblock %}

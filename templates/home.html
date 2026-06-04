@@ -1,600 +1,101 @@
-
 {% extends 'base.html' %}
 
 {% block content %}
 
-
-
 <!-- HERO -->
-
-<section style="
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-url('/static/images/hero.jpg');
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;">
-
+<section class="home-hero" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/hero.jpg');">
     <div>
-
-        <h1 style="
-        font-size:75px;
-        color:#FFECD1;
-        font-family:Georgia, serif;
-        margin-bottom:25px;
-        letter-spacing:3px;">
-
-            HALLUCINATION
-
-        </h1>
-
-        <p style="
-        font-size:20px;
-        color:white;
-        max-width:900px;
-        line-height:1.8;">
-
-            Crafting cinematic visuals, emotional stories,
-            and luxury production experiences.
-
+        <h1 class="home-hero-title">HALLUCINATION</h1>
+        <p class="home-hero-p">
+            Crafting cinematic visuals, emotional stories, and luxury production experiences.
         </p>
-
-        <a href="/portfolio/"
-
-        style="
-        display:inline-block;
-        margin-top:40px;
-        padding:16px 40px;
-        background:#FFECD1;
-        color:#3E000C;
-        text-decoration:none;
-        border-radius:50px;
-        font-weight:bold;
-        font-size:16px;">
-
-            Explore Portfolio
-
-        </a>
-
+        <a href="/portfolio/" class="home-hero-btn">Explore Portfolio</a>
     </div>
-
 </section>
-
-
-
-
-
-
-
-
-
-
 
 <!-- ABOUT -->
-
-<section style="
-position:relative;
-
-height:90vh;
-
-overflow:hidden;
-
-display:flex;
-justify-content:center;
-align-items:center;
-margin-top:100px;
-text-align:center;">
-
-
-
-
+<section class="about-video-section">
     <!-- VIDEO -->
-
-    <video autoplay muted loop playsinline
-
-    style="
-    position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    z-index:-2;">
-
-        <source src="/static/videos/service_video.mp4"
-        type="video/mp4">
-
+    <video autoplay muted loop playsinline class="about-video-element">
+        <source src="/static/videos/service_video.mp4" type="video/mp4">
     </video>
 
-
-
-
-
     <!-- DARK OVERLAY -->
-
-    <div style="
-    position:absolute;
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,0.55);
-
-    z-index:-1;"></div>
-
-
-
-
+    <div class="about-video-overlay"></div>
 
     <!-- CONTENT -->
-
-    <div style="
-    max-width:1000px;
-    padding:40px;">
-
-        <h2 style="
-        font-size:55px;
-        color:#FFECD1;
-        margin-bottom:30px;
-        font-family:Georgia, serif;
-        letter-spacing:2px;">
-
-            About Us
-
-        </h2>
-
-        <p style="
-        font-size:20px;
-        line-height:2;
-        color:white;">
-
-            Hallucination is a modern production house focused on
-            cinematic storytelling, commercial visuals, wedding films,
-            fashion photography, and digital media experiences.
-
+    <div class="about-video-content">
+        <h2 class="about-video-title">About Us</h2>
+        <p class="about-video-text">
+            Hallucination is a modern production house focused on cinematic storytelling, commercial visuals, wedding films, fashion photography, and digital media experiences.
         </p>
-
     </div>
-
 </section>
-
-
-
-
 
 <!-- SERVICES -->
+<section class="services-section-home">
+    <h1 class="services-title-home">OUR SERVICES</h1>
 
-<section style="
-padding:90px 40px;
-background:#FFECD1;">
-
-    <h1 style="
-    text-align:center;
-    font-size:33px;
-    color:#3E000C;
-    margin-bottom:55px;
-    letter-spacing:4px;
-    font-family:Georgia, serif;">
-
-        OUR SERVICES
-
-    </h1>
-
-
-
-
-
-    <div style="
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:24px;">
-
-
-
-
+    <div class="services-grid-home">
         <!-- CARD 1 -->
-
-        <div style="
-        height:350px;
-
-        background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-        url('/static/images/advertisement.jpg');
-
-        background-size:cover;
-        background-position:center;
-
-        border-radius:24px;
-
-        display:flex;
-        align-items:end;
-
-        overflow:hidden;">
-
-            <div style="padding:30px;">
-
-                <h2 style="
-                color:#FFECD1;
-                font-size:18px;
-                margin-bottom:14px;">
-
-                    Commercials
-
-                </h2>
-
-                <p style="
-                color:white;
-                font-size:14px;
-                line-height:1.7;
-                margin-bottom:18px;">
-
-                    Cinematic commercial productions
-                    for modern brands.
-
-                </p>
-
-                <a href="/services/advertisement/"
-                style="
-                background:#FFECD1;
-                color:#3E000C;
-                padding:7px 18px;
-                border-radius:40px;
-                text-decoration:none;
-                font-weight:bold;">
-
-                    Explore
-
-                </a>
-
+        <div class="service-card-home" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/advertisement.jpg');">
+            <div class="service-card-content">
+                <h2 class="service-card-title">Commercials</h2>
+                <p class="service-card-desc">Cinematic commercial productions for modern brands.</p>
+                <a href="/services/advertisement/" class="service-card-btn">Explore</a>
             </div>
-
         </div>
-
-
-
-
 
         <!-- CARD 2 -->
-
-        <div style="
-        height:350px;
-
-        background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-        url('/static/images/wedd.jpeg');
-
-        background-size:cover;
-        background-position:top;
-
-        border-radius:24px;
-
-        display:flex;
-        align-items:end;
-
-        overflow:hidden;">
-
-            <div style="padding:30px;">
-
-                <h2 style="
-                color:#FFECD1;
-                font-size:18px;
-                margin-bottom:14px;">
-
-                    Bridal
-
-                </h2>
-
-                <p style="
-                color:white;
-                line-height:1.7;
-                font-size:14px;
-                margin-bottom:18px;">
-
-                    Emotional wedding storytelling
-                    with cinematic visuals.
-
-                </p>
-
-                <a href="/services/wedding/"
-                style="
-                background:#FFECD1;
-                color:#3E000C;
-                padding:7px 18px;
-                border-radius:40px;
-                text-decoration:none;
-                font-weight:bold;">
-
-                    Explore
-
-                </a>
-
+        <div class="service-card-home" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/wedd.jpeg'); background-position: top;">
+            <div class="service-card-content">
+                <h2 class="service-card-title">Bridal</h2>
+                <p class="service-card-desc">Emotional wedding storytelling with cinematic visuals.</p>
+                <a href="/services/wedding/" class="service-card-btn">Explore</a>
             </div>
-
         </div>
-
-
-
-
 
         <!-- CARD 3 -->
-
-        <div style="
-        height:350px;
-
-        background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-        url('/static/images/film.jpeg');
-
-        background-size:cover;
-        background-position:center;
-
-        border-radius:24px;
-
-        display:flex;
-        align-items:end;
-
-        overflow:hidden;">
-
-            <div style="padding:30px;">
-
-                <h2 style="
-                color:#FFECD1;
-                font-size:18px;
-                margin-bottom:14px;">
-
-                    Creative Films
-
-                </h2>
-
-                <p style="
-                color:white;
-                line-height:1.7;
-                font-size:14px;
-                margin-bottom:18px;">
-
-                    Powerful cinematic storytelling
-                    and visual direction.
-
-                </p>
-
-                <a href="/services/shortfilms/"
-                style="
-                background:#FFECD1;
-                color:#3E000C;
-                padding:7px 18px;
-                border-radius:40px;
-                text-decoration:none;
-                font-weight:bold;">
-
-                    Explore
-
-                </a>
-
+        <div class="service-card-home" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/film.jpeg');">
+            <div class="service-card-content">
+                <h2 class="service-card-title">Creative Films</h2>
+                <p class="service-card-desc">Powerful cinematic storytelling and visual direction.</p>
+                <a href="/services/shortfilms/" class="service-card-btn">Explore</a>
             </div>
-
-
         </div>
 
-    
+        <!-- CARD 4 -->
+        <div class="service-card-home" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/shoot.jpeg');">
+            <div class="service-card-content">
+                <h2 class="service-card-title">Photo Shoot</h2>
+                <p class="service-card-desc">Premium creative photography sessions for modern aesthetics.</p>
+                <a href="/services/photoshoot/" class="service-card-btn">Explore</a>
+            </div>
+        </div>
 
-    <!-- CARD 4 -->
+        <!-- CARD 5 -->
+        <div class="service-card-home" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/model.jpeg');">
+            <div class="service-card-content">
+                <h2 class="service-card-title">Fashion Photography</h2>
+                <p class="service-card-desc">Fashion-forward portfolio photography for models.</p>
+                <a href="/services/model-photography/" class="service-card-btn">Explore</a>
+            </div>
+        </div>
 
-<div style="
-height:350px;
-
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-url('/static/images/shoot.jpeg');
-
-background-size:cover;
-background-position:center;
-
-border-radius:24px;
-
-display:flex;
-align-items:end;
-
-overflow:hidden;">
-
-    <div style="padding:30px;">
-
-        <h2 style="
-        color:#FFECD1;
-        font-size:18px;
-        margin-bottom:14px;">
-
-            Photo Shoot
-
-        </h2>
-
-        <p style="
-        color:white;
-        line-height:1.7;
-        font-size:14px;
-        margin-bottom:18px;">
-
-            Premium creative photography
-            sessions for modern aesthetics.
-
-        </p>
-
-        <a href="/services/photoshoot/"
-        style="
-        background:#FFECD1;
-        color:#3E000C;
-        padding:7px 18px;
-        border-radius:40px;
-        text-decoration:none;
-        font-weight:bold;">
-
-            Explore
-
-        </a>
-
+        <!-- CARD 6 -->
+        <div class="service-card-home" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('/static/images/product.jpeg');">
+            <div class="service-card-content">
+                <h2 class="service-card-title">Brand Photography</h2>
+                <p class="service-card-desc">Commercial product visuals designed for luxury branding.</p>
+                <a href="/services/product-photography/" class="service-card-btn">Explore</a>
+            </div>
+        </div>
     </div>
-
-</div>
-
-
-
-
-
-<!-- CARD 5 -->
-
-<div style="
-height:350px;
-
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-url('/static/images/model.jpeg');
-
-background-size:cover;
-background-position:center;
-
-border-radius:24px;
-
-display:flex;
-align-items:end;
-
-overflow:hidden;">
-
-    <div style="padding:30px;">
-
-        <h2 style="
-        color:#FFECD1;
-        font-size:18px;
-        margin-bottom:14px;">
-
-            Fashion Photography
-
-        </h2>
-
-        <p style="
-        color:white;
-        line-height:1.7;
-        font-size:14px;
-        margin-bottom:18px;">
-
-            Fashion-forward portfolio
-            photography for models.
-
-        </p>
-
-        <a href="/services/model-photography/"
-        style="
-        background:#FFECD1;
-        color:#3E000C;
-        padding:7px 18px;
-        border-radius:40px;
-        text-decoration:none;
-        font-weight:bold;">
-
-            Explore
-
-        </a>
-
-    </div>
-
-</div>
-
-
-
-
-
-<!-- CARD 6 -->
-
-<div style="
-height:350px;
-
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-url('/static/images/product.jpeg');
-
-background-size:cover;
-background-position:center;
-
-border-radius:24px;
-
-display:flex;
-align-items:end;
-
-overflow:hidden;">
-
-    <div style="padding:30px;">
-
-        <h2 style="
-        color:#FFECD1;
-        font-size:20px;
-        margin-bottom:14px;">
-
-            Brand Photography
-
-        </h2>
-
-        <p style="
-        color:white;
-        line-height:1.7;
-        font-size:14px;
-        margin-bottom:18px;">
-
-            Commercial product visuals
-            designed for luxury branding.
-
-        </p>
-
-        <a href="/services/product-photography/"
-        style="
-        background:#FFECD1;
-        color:#3E000C;
-        padding:7px 18px;
-        border-radius:40px;
-        text-decoration:none;
-        font-weight:bold;">
-
-            Explore
-
-        </a>
-
-    </div>
-
-</div>
-
-</div>
-
 </section>
 
-
-
-
-
 <!-- FOOTER -->
-
-<footer style="
-background:#3E000C;
-padding:40px;
-text-align:center;">
-
-    <p style="
-    color:#FFECD1;
-    letter-spacing:1px;">
-
-        © 2026 Hallucination Production Firm
-
-    </p>
-
+<footer class="portfolio-footer-new">
+    <p class="portfolio-footer-text-new">© 2026 Hallucination Production Firm</p>
 </footer>
 
 {% endblock %}
-```

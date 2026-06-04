@@ -2,257 +2,54 @@
 
 {% block content %}
 
-<section style="
-padding:120px 100px;
-background:#FFECD1;
-min-height:100vh;">
-
-    <div style="
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    gap:60px;
-    flex-wrap:wrap;">
-
-
+<section class="contact-section-new">
+    <div class="contact-container">
 
         <!-- LEFT SIDE -->
-
-        <div style="
-        flex:1;
-        min-width:300px;">
-
-            <h1 style="
-            font-size:55px;
-            color:#3E000C;
-            margin-bottom:30px;
-            font-weight:900;
-            letter-spacing:2px;
-            font-family:Georgia, serif;">
-
-                CONTACT US
-
-            </h1>
-
-            <p style="
-            font-size:21px;
-            color:#3E000C;
-            line-height:1.9;
-            margin-bottom:45px;">
-
-                Let’s create cinematic experiences together.
-                Contact Hallucination for video production,
-                editing, commercial shoots, and creative collaborations.
-
+        <div class="contact-left-col">
+            <h1 class="contact-title-new">CONTACT US</h1>
+            <p class="contact-desc-new">
+                Let’s create cinematic experiences together. Contact Hallucination for video production, editing, commercial shoots, and creative collaborations.
             </p>
 
-
-
-
-
-            <div style="
-            margin-bottom:28px;
-            padding-bottom:18px;
-            border-bottom:1px solid rgba(62,0,12,0.1);">
-
-                <h3 style="
-                color:#3E000C;
-                margin-bottom:10px;
-                font-size:20px;">
-
-                    Email
-
-                </h3>
-
-                <p style="
-                font-size:18px;
-                color:#5b1a24;">
-
-                    thehallucinationfilms@gmail.com
-
-                </p>
-
+            <div class="contact-info-block">
+                <h3 class="contact-info-title">Email</h3>
+                <p class="contact-info-detail">thehallucinationfilms@gmail.com</p>
             </div>
 
-
-
-
-
-            <div style="
-            margin-bottom:28px;
-            padding-bottom:18px;
-            border-bottom:1px solid rgba(62,0,12,0.1);">
-
-                <h3 style="
-                color:#3E000C;
-                margin-bottom:10px;
-                font-size:20px;">
-
-                    Instagram
-
-                </h3>
-
-                <p style="
-                font-size:18px;
-                color:#5b1a24;">
-
-                    @hallucination.films
-
-                </p>
-
+            <div class="contact-info-block">
+                <h3 class="contact-info-title">Instagram</h3>
+                <p class="contact-info-detail">@hallucination.films</p>
             </div>
 
-
-
-
-
-            <div style="
-            margin-bottom:28px;
-            padding-bottom:18px;
-            border-bottom:1px solid rgba(62,0,12,0.1);">
-
-                <h3 style="
-                color:#3E000C;
-                margin-bottom:10px;
-                font-size:20px;">
-
-                    Phone
-
-                </h3>
-
-                <p style="
-                font-size:18px;
-                color:#5b1a24;
-                line-height:1.8;">
-
+            <div class="contact-info-block">
+                <h3 class="contact-info-title">Phone</h3>
+                <p class="contact-info-detail">
                     +91 9567109896 <br>
                     +91 8075092487
-
                 </p>
-
             </div>
 
-
-
-
-
-            <div>
-
-                <h3 style="
-                color:#3E000C;
-                margin-bottom:10px;
-                font-size:20px;">
-
-                    Location
-
-                </h3>
-
-                <p style="
-                font-size:18px;
-                color:#5b1a24;">
-
-                    Kollam, Kerala, India
-
-                </p>
-
+            <div class="contact-info-block" style="border-bottom: none;">
+                <h3 class="contact-info-title">Location</h3>
+                <p class="contact-info-detail">Kollam, Kerala, India</p>
             </div>
-
         </div>
 
-
-
-
-
         <!-- RIGHT SIDE -->
-
-        <div style="
-        flex:1;
-        min-width:320px;
-        background:#3E000C;
-        padding:55px;
-        border-radius:28px;
-        box-shadow:0 10px 40px rgba(62,0,12,0.25);">
-
+        <div class="contact-right-col">
             <form method="POST">
                 {% csrf_token %}
 
-                <input type="text"
-                placeholder="Your Name"
-                name="name"
+                <input type="text" placeholder="Your Name" name="name" class="contact-input-new" required>
+                <input type="email" placeholder="Your Email" name="email" class="contact-input-new" required>
+                <textarea placeholder="Your Message" name="message" class="contact-textarea-new" required></textarea>
 
-                style="
-                width:100%;
-                padding:18px;
-                margin-bottom:20px;
-                border:none;
-                border-radius:14px;
-                background:#FFECD1;
-                color:#3E000C;
-                font-size:16px;
-                outline:none;">
-
-
-
-
-                <input type="email"
-                placeholder="Your Email"
-                name="email"
-                style="
-                width:100%;
-                padding:18px;
-                margin-bottom:20px;
-                border:none;
-                border-radius:14px;
-                background:#FFECD1;
-                color:#3E000C;
-                font-size:16px;
-                outline:none;">
-
-
-
-
-                <textarea
-                placeholder="Your Message"
-                name="message"
-                style="
-                width:100%;
-                height:180px;
-                padding:18px;
-                border:none;
-                border-radius:14px;
-                background:#FFECD1;
-                color:#3E000C;
-                font-size:16px;
-                margin-bottom:22px;
-                outline:none;"></textarea>
-
-
-
-
-                <button
-
-                style="
-                width:100%;
-                padding:18px;
-                background:#FFECD1;
-                color:#3E000C;
-                border:none;
-                border-radius:50px;
-                font-size:17px;
-                font-weight:700;
-                cursor:pointer;
-                transition:0.3s;">
-
-                    Send Message
-
-                </button>
-
+                <button class="contact-btn-new">Send Message</button>
             </form>
-
         </div>
 
     </div>
-
 </section>
 
 {% endblock %}

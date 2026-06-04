@@ -1,47 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<section style="
-height:100vh;
-
-background:
-linear-gradient(rgba(0,0,0,0.5),
-rgba(0,0,0,0.5)),
-url('/static/images/product.jpeg');
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-
-padding:100px;">
-
-    <h1 style="
-    font-size:90px;
-    color:white;
-    margin-bottom:40px;
-    font-family:Georgia, serif;">
-
-        Product Photography
-
-    </h1>
-
-    <p style="
-    font-size:24px;
-    color:white;
-    line-height:1.9;
-    max-width:1100px;">
-
-        Hallucination creates premium
-        commercial product photography
-        designed to enhance brand identity,
-        marketing visuals, and customer engagement.
-
+<section class="service-detail-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/static/images/product.jpeg');">
+    <h1 class="service-detail-title">Product Photography</h1>
+    <p class="service-detail-desc">
+        Hallucination creates premium commercial product photography designed to enhance brand identity, marketing visuals, and customer engagement.
     </p>
-
 </section>
-
 {% endblock %}
